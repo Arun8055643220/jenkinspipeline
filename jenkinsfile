@@ -1,6 +1,6 @@
 node{
 stage('SCM Checkout'){
-   git 'https://github.com/Arun8055643220/jenkinspipeline.git'
+   git 'https://github.com/Arun8055643220/jenkinspipeline'
 }
 stage('Compile-Package'){
 sh 'mvn package'
