@@ -1,26 +1,4 @@
-pipeline {
- agent any
-    stages {
-   
-stage ('build')
-{
-steps{
-echo"build the project"
+stage('SCM Checkout'){
+   git ''
 }
-}
-stage('Test')
-{
-steps{
-echo" Testing the project"
-}
-}
-stage('Deploy')
-{
-steps
-{
-echo('Deploying the project')
-}
-}
-}
-}
-
+stage('Compile-Package')
